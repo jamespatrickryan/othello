@@ -2,7 +2,7 @@ import tkinter
 import tkinter.messagebox
 
 from constants import *
-from reversi import *
+from game import *
 
 
 class Othello(tkinter.Tk):
