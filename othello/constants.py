@@ -11,25 +11,7 @@ VACANT = '.'
 BLACK = '@'
 WHITE = 'o'
 
-UP = -10
-DOWN = 10
-LEFT = -1
-RIGHT = 1
-UP_LEFT = -11
-DOWN_LEFT = 9
-UP_RIGHT = -9
-DOWN_RIGHT = 11
-
-DIRECTIONS = (
-    UP,
-    DOWN,
-    LEFT,
-    RIGHT,
-    UP_LEFT,
-    DOWN_LEFT,
-    UP_RIGHT,
-    DOWN_RIGHT
-)
+DIRECTIONS = (-10, 10, -1, 1, 11, 9, -9, 11)
 
 WEIGHTS = [
     0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
