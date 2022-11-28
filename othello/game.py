@@ -51,7 +51,9 @@ def batch(square, player, board, direction):
 
 
 def a_legal(move, player, board):
-    seeker = lambda direction: batch(move, player, board, direction)
+    def seeker(direction):
+        return batch(move, player, board, direction)
+
     return board[move] == VACANT and any(map(seeker, DIRECTIONS))
 
 
@@ -162,7 +164,9 @@ def human(player, board):
 def play(black, white):
     board = initialization()
     player = BLACK
-    strategy = lambda who: black if who == BLACK else white
+
+    def strategy(player):
+        return black if player == BLACK else white
 
     while player is not None:
         move = fetch(strategy(player), player, board)
