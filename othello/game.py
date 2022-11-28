@@ -26,7 +26,7 @@ def illustrate_the(board):
         start, stop = 10 * row + 1, 10 * row + 9
         flush += f'{row} {" ".join(board[start:stop])}\n'
 
-    return flush
+    print(flush)
 
 
 def on_the_board(move):
