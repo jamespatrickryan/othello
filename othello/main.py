@@ -183,9 +183,7 @@ class Index(tkinter.Frame):
         for square in cells():
             piece = self.board[square]
 
-            if None:
-                ...
-            elif piece == BLACK:
+            if piece == BLACK:
                 player += 1
             elif piece == WHITE:
                 computer += 1
